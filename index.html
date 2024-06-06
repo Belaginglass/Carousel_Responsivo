@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="slide.js"></script>
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="main-header">
+      <a class="logo-header" href="/"><img src="img/logo.png" alt=""></a>
+        <nav class="main-nav">
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="header-list-container">
+            <li class="nav-item home-active"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#">Categories</a></li>
+            <li class="nav-item"><a href="#">Products</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Assessments</a></li>
+          </ul>
+        </nav>
+    </header>
+    <section class="slider">
+      <div class="slider-content">
+          
+          <input type="radio" name="btn-radio" id="radio1">
+          <input type="radio" name="btn-radio" id="radio2">
+          <input type="radio" name="btn-radio" id="radio3">
+
+          <div class="slide-box slide-active">
+              <img class="img-desktop" src="img/slide-1.jpg" alt="slide 1">
+              <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1">
+          </div>
+
+          <div class="slide-box">
+              <img class="img-desktop" src="img/slide-2.jpg" alt="slide 3">
+              <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1">
+          </div>
+
+          <div class="slide-box">
+              <img class="img-desktop" src="img/slide-3.jpg" alt="slide 3">
+              <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3">
+          </div>
+
+          <div class="nav-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+          </div>
+
+          <div class="nav-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+          </div>
+
+      </div>
+  </section>
+</body>
+</html>
