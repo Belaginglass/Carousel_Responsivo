@@ -74,12 +74,12 @@ header{
     overflow-x: hidden;
   }
   .main-header{
-    height: auto;
+    height: 12vh;
     padding: 1rem;
   }
   .header-list-container {
     position: absolute;
-    top: 16vh;
+    top: 12vh;
     right: 0;
     width: 50vw;
     height: 90vh;
