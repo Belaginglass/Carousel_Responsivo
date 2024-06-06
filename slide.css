@@ -1,5 +1,4 @@
-
-section.slider{
+section.slider {
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -7,17 +6,17 @@ section.slider{
     overflow: hidden;
 }
 
-.slider-content{
+.slider-content {
     width: 400%;
     height: auto;
     display: flex;
 }
 
-.slider-content input, .img-mobile{
+.slider-content input, .img-mobile {
     display: none;
 }
 
-.slide-box{
+.slide-box {
     width: 25%;
     height: auto;
     position: relative;
@@ -25,11 +24,11 @@ section.slider{
     transition: 1s;
 }
 
-.slide-box img{
+.slide-box img {
     width: 100%;
 }
 
-.nav-manual, .nav-auto{
+.nav-manual, .nav-auto {
     position: absolute;
     width: 100%;
     margin-top: 35%;
@@ -37,7 +36,7 @@ section.slider{
     justify-content: center;
 }
 
-.nav-manual .manual-btn, .nav-auto div{
+.nav-manual .manual-btn, .nav-auto div {
     border: 1px solid #ff0054;
     padding: 10px;
     border-radius: 50%;
@@ -45,40 +44,42 @@ section.slider{
     transition: 0.2s;
 }
 
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
     margin-right: 10px;
 }
 
-.nav-manual .manual-btn:hover{
+.nav-manual .manual-btn:hover {
     background-color: #ff0054;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3 {
     background-color: #ff0054;
 }
 
-#radio1:checked ~ .slide-active{
+#radio1:checked ~ .slide-active {
     margin-left: 0%;
 }
 
-#radio2:checked ~ .slide-active{
+#radio2:checked ~ .slide-active {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .slide-active{
+#radio3:checked ~ .slide-active {
     margin-left: -50%;
 }
 
 @media screen and (max-width: 900px) {
-    .img-desktop{
+    .img-desktop {
         display: none;
     }
 
-    .img-mobile{
+    .img-mobile {
         display: block;
     }
 
-    .nav-auto, .nav-manual{
+    .nav-auto, .nav-manual {
         margin-top: 60%;
     }
 }

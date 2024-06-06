@@ -1,18 +1,15 @@
-var radio = document.querySelector('.manual-btn')
-var cont = 1
-
-document.getElementById('radio1').checked = true
+var cont = 1;
+document.getElementById('radio1').checked = true;
 
 setInterval(() => {
-    proximaImg()
-}, 4000)
+    proximaImg();
+}, 4000);
 
 function proximaImg(){
-    cont++
-
+    cont++;
     if(cont > 3){
-        cont = 1 
+        cont = 1;
     }
 
-    document.getElementById('radio'+cont).checked = true
+    document.getElementById('radio' + cont).checked = true;
 }
